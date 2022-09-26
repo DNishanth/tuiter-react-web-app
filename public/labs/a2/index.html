@@ -222,5 +222,82 @@
     to get dummy text<br/>
 
     Checkout my <a href="other-page.html">other page</a>
+
+    <h2>Table of Contents: Embedding</h2>
+    <ul>
+        <li>
+            <a href="#embedding-website">Embedding other websites</a>
+        </li>
+        <li>
+            <a href="#embedding-youtube">Embedding Youtube videos</a>
+        </li>
+        <li>
+            <a href="#embedding-slides">Embedding Google slides</a>
+        </li>
+    </ul>
+    <a id="embedding-website"></a>
+    <h2>Embedding other websites</h2>
+    <a href="#top">Top</a><br/>
+    <iframe width="800"
+            height="540"
+            src="https://htwins.net/scale2/">
+    </iframe>
+
+    <a id="embedding-youtube"></a>
+    <h2>Embedding YouTube</h2>
+    <a href="#top">Top</a><br/>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/thOifuHs6eY" title="YouTube video player"
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+    </iframe>
+
+    <a id="embedding-slides"></a>
+    <h2>Embedding Google slides</h2>
+    <a href="#top">Top</a><br/>
+    <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQ9GPD8jD1_F_S0yim5NyI9K77gOCoe8PpkOxHYUqVXB-3g5LpN4zhCujwaPlLFv6O5M6coZwnIeaIH/embed?start=false&loop=false&delayms=3000"
+            frameborder="0" width="960" height="629" allowfullscreen="true" mozallowfullscreen="true"
+            webkitallowfullscreen="true">
+    </iframe>
+
+    <h2>Table of Contents: SVG</h2>
+    <ul>
+        <li>
+            <a href="#drawing-rectangles">Drawing rectangles</a>
+        </li>
+        <li>
+            <a href="#drawing-circles">Drawing circles</a>
+        </li>
+        <li>
+            <a href="#drawing-polygons">Drawing polygons</a>
+        </li>
+    </ul>
+
+    <a id="drawing-rectangles"></a>
+    <h2>Drawing rectangles</h2>
+    <a href="#top">Top</a><br/>
+
+    <svg width="300" height="100">
+        <rect width="300" height="100"
+              style="fill:rgb(200,100,50); stroke-width:10;
+   stroke:rgb(0,0,0)" />
+    </svg>
+
+    <a id="drawing-circles"></a>
+    <h2>Drawing circles</h2>
+    <a href="#top">Top</a><br/>
+
+    <svg width="100" height="100">
+        <circle cx="50" cy="50" r="40"
+                stroke="black" stroke-width="7" fill="yellow" />
+    </svg>
+
+    <a id="drawing-polygons"></a>
+    <h2>Drawing polygons</h2>
+    <a href="#top">Top</a><br/>
+
+    <svg width="300" height="200">
+        <polygon points="100,10 40,198 190,78 10,78 160,198"
+                 style="fill:green; stroke:orange; stroke-width:5; fill-rule:evenodd;" />
+    </svg>
 </body>
 </html>
