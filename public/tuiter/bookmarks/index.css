@@ -1,0 +1,126 @@
+.wd_title {
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+
+.wd-gray-heading {
+    font-size: 13px;
+    color: lightgray;
+}
+
+html {
+    background-color: black;
+    border-color: rgb(47, 51, 54);
+    margin-left: 16px;
+    font-family: Arial, serif;
+    width: 600px;
+    margin-top: 5px;
+}
+
+body {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.wd-news-item {
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightgray;
+    padding-left: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.wd-avatar-image {
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.wd-author-name {
+    font-size: 15px;
+    color: white;
+    margin-left: 12px;
+}
+
+.wd-author-tag {
+    font-size: 15px;
+    color: lightgray;
+}
+
+.wd-main-content {
+    font-size: 15px;
+    color: white;
+    max-width: 506px;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.wd-content-image {
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-top: 12px;
+    margin-right: 12px;
+    margin-left: 12px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightgray;
+}
+
+.wd-image-info {
+    margin-left: 12px;
+}
+
+.wd-image-title {
+    font-size: 15px;
+    color: white;
+    padding: 15px;
+}
+
+.wd-image-description {
+    font-size: 15px;
+    color: lightgray;
+    max-width: 500px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightgray;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 1px;
+}
+
+.wd-image-box {
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightgray;
+    border-radius: 10px;
+}
+
+.wd-icon {
+    color: lightgray;
+    margin-right: 12px;
+}
+
+.wd-icon-text {
+    color: lightgray;
+}
+
+.wd-icon-red {
+    color: red;
+    margin-right: 12px;
+}
+
+.wd-icon-text-red {
+    color: red;
+}
+
+.wd-flex-parent {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 12px;
+}
+
+a {
+    text-decoration: none;
+}

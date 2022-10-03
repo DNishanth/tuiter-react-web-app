@@ -1,0 +1,20 @@
+.wd-rounded-corners {
+    border-radius: 50px;
+}
+
+.wd-float-left {
+    float: left;
+}
+
+.wd-float-right {
+    float: right;
+}
+
+.wd-float-done {
+    clear: both;
+}
+
+body {
+    margin-left: 0;
+    margin-right: 0;
+}
