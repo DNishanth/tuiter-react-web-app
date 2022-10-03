@@ -1,7 +1,3 @@
-.wd-rounded-corners {
-    border-radius: 50px;
-}
-
 .wd-input-style {
     color: white;
     background-color: darkgray;
@@ -32,17 +28,13 @@ html {
     width: 584px;
 }
 
-body {
-    margin-left: 0;
-    margin-right: 0;
-}
-
 .wd-category {
     float: left;
     color: rgb(110, 118, 125);
     font-size: 15px;
     padding: 16px;
     font-weight: bold;
+    text-decoration: none;
 }
 
 .wd-selected {
@@ -60,18 +52,6 @@ body {
 .wd-blank-space {
     background: #181818;
     font-size: 7px;
-}
-
-.wd-float-left {
-    float: left;
-}
-
-.wd-float-right {
-    float: right;
-}
-
-.wd-float-done {
-    clear: both;
 }
 
 .wd-topic {
