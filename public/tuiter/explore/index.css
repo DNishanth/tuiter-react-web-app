@@ -11,8 +11,9 @@
 .wd-topic-image {
     border-radius: 12px;
     object-fit: fill;
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
+    margin: 10px 16px 10px 10px;
 }
 
 .wd-center-image-heading {
@@ -22,8 +23,8 @@
 }
 
 .wd-search-position {
-    bottom: 10px;
-    left: 10px;
+    bottom: 18px;
+    left: 28px;
 }
 
 .wd-follow-image {
@@ -45,4 +46,23 @@
 .wd-heading-black {
     color: black;
     font-weight: bold;
+}
+
+.wd-flex-follow {
+    display: flex;
+    align-items: center;
+}
+
+.wd-follow-text {
+    white-space: nowrap;
+}
+
+.wd-flex-follow-btn {
+    margin-left: auto;
+    height: 38px;
+}
+
+.wd-center-text {
+    margin-left: 12px;
+    margin-top: 5px;
 }
