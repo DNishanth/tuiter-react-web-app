@@ -1,0 +1,68 @@
+.wd-gear {
+    color: #0c63e4;
+}
+
+.wd-topic-item {
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightgray;
+}
+
+.wd-topic-image {
+    border-radius: 12px;
+    object-fit: fill;
+    width: 90px;
+    height: 90px;
+    margin: 10px 16px 10px 10px;
+}
+
+.wd-center-image-heading {
+    color: white;
+    bottom: 0;
+    left: 10px;
+}
+
+.wd-search-position {
+    bottom: 18px;
+    left: 28px;
+}
+
+.wd-follow-image {
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+}
+
+.wd-flex-text {
+    display: flex;
+    align-items: center;
+}
+
+.wd-flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wd-heading-black {
+    color: black;
+    font-weight: bold;
+}
+
+.wd-flex-follow {
+    display: flex;
+    align-items: center;
+}
+
+.wd-follow-text {
+    white-space: nowrap;
+}
+
+.wd-flex-follow-btn {
+    margin-left: auto;
+    height: 38px;
+}
+
+.wd-center-text {
+    margin-left: 12px;
+    margin-top: 5px;
+}
