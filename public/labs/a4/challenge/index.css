@@ -1,11 +1,81 @@
+body {
+    background-color: black;
+}
+
 .wd-gear {
-    color: #0c63e4;
+    color: white;
+    width: fit-content;
+}
+
+.wd-nav-style {
+    background-color: black;
+}
+
+.wd-nav-icon {
+    color: rgb(217, 217, 217);
+    margin-right: 10px;
+}
+
+.form-control {
+    background-color: rgb(33, 35, 39);
+    border: none;
+}
+
+.wd-follow-style {
+    background-color: rgb(22, 24, 28);
+    border: none;
+}
+
+.nav-link {
+    color: rgb(107, 115, 122);
+    font-weight: bold;
+}
+
+.nav-link.wd-selected {
+    color: rgb(217, 217, 217);
+}
+
+.wd-underline {
+    border-bottom: rgb(30, 155, 240);
+    border-bottom-width: 4px;
+    border-style: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding-bottom: 14px;
+}
+
+.nav > a:hover {
+    color: white;
+    background-color: black;
+}
+
+.nav-tabs {
+    border-bottom: none;
+}
+
+.btn-primary {
+    background-color: rgb(30, 155, 240);
+    font-weight: bold;
+}
+
+.wd-follow-heading {
+    font-size: 24px;
 }
 
 .wd-topic-item {
+    border: none;
+}
+
+.wd-center-container {
     border-style: solid;
-    border-width: 1px;
-    border-color: lightgray;
+    border-width: 2px;
+    border-color: #323539;
+    padding: 0;
+}
+
+.list-group.wd-follow-group {
+    border-radius: 16px;
 }
 
 .wd-topic-image {
@@ -16,6 +86,14 @@
     margin: 10px 16px 10px 10px;
 }
 
+.wd-center-image-style {
+    border-style: solid;
+    border-width: 2px;
+    border-left: none;
+    border-right: none;
+    border-color: #323539;
+}
+
 .wd-center-image-heading {
     color: white;
     bottom: 0;
@@ -24,7 +102,8 @@
 
 .wd-search-position {
     bottom: 18px;
-    left: 28px;
+    left: 30px;
+    color: rgb(107, 115, 122);
 }
 
 .wd-follow-image {
@@ -43,8 +122,18 @@
     justify-content: space-between;
 }
 
+.wd-flex-container-input {
+    display: flex;
+    justify-content: end;
+}
+
 .wd-heading-black {
-    color: black;
+    color: rgb(217, 217, 217);
+    font-weight: bold;
+}
+
+.wd-heading-offwhite {
+    color: rgb(217, 217, 217);
     font-weight: bold;
 }
 
@@ -60,6 +149,9 @@
 .wd-flex-follow-btn {
     margin-left: auto;
     height: 38px;
+    background-color: white;
+    color: black;
+    border: none;
 }
 
 .wd-center-text {
