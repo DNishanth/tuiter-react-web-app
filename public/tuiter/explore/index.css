@@ -1,0 +1,33 @@
+.wd-gear {
+    color: #0c63e4;
+}
+
+.wd-topic-item {
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightgray;
+}
+
+.wd-topic-image {
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.wd-flex-text {
+    display: flex;
+    align-items: center;
+}
+
+.wd-flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wd-heading-black {
+    color: black;
+    font-weight: bold;
+}
+
+.wd-heading-gray {
+    color: gray;
+}
