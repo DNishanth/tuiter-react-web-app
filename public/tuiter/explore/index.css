@@ -10,7 +10,26 @@
 
 .wd-topic-image {
     border-radius: 12px;
+    object-fit: fill;
+    width: 100px;
+    height: 100px;
+}
+
+.wd-center-image-heading {
+    color: white;
+    bottom: 0;
+    left: 10px;
+}
+
+.wd-search-position {
+    bottom: 10px;
+    left: 10px;
+}
+
+.wd-follow-image {
     object-fit: cover;
+    width: 50px;
+    height: 50px;
 }
 
 .wd-flex-text {
@@ -26,8 +45,4 @@
 .wd-heading-black {
     color: black;
     font-weight: bold;
-}
-
-.wd-heading-gray {
-    color: gray;
 }
