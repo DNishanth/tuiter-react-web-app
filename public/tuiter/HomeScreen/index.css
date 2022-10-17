@@ -6,9 +6,15 @@
     background: black;
 }
 
+a {
+    text-decoration: none;
+}
+
 .wd-hide {
     display: none;
 }
+
+
 
 .wd-topic-image {
     border-radius: 12px;
