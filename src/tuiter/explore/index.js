@@ -18,7 +18,8 @@ const ExploreComponent = () => {
             </div>
             <ul className="nav nav-pills mb-2">
                 <li className="nav-item">
-                    <a href="#" className="nav-link active">For You</a>
+                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                    <a className="nav-link active">For You</a>
                 </li>
                 <li className="nav-item">
                     <a className="nav-link">Trending</a>
