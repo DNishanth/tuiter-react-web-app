@@ -1,12 +1,14 @@
 import React from "react";
 import PostItem from "./PostItem.js";
-import posts from "./posts.js"
+import postsArray from "./posts.json"
 
 const PostList = () => {
     return (
         <div className="list-group mb-2">
             {
-                posts.map(post => <PostItem/>)
+                postsArray.map(post =>
+                    <PostItem
+                        key={post._id} post={post}/>)
             }
         </div>
     );
