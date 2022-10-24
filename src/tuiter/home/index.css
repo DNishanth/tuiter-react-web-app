@@ -1,0 +1,121 @@
+.wd-gear {
+    color: #2a9fd6;
+}
+
+.list-group-item.wd-post {
+    background: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wd-hide {
+    display: none;
+}
+
+
+
+.wd-topic-image {
+    border-radius: 12px;
+    object-fit: fill;
+    width: 90px;
+    height: 90px;
+    margin: 10px 5px 10px 10px;
+}
+
+.wd-image-body-container {
+    border-style: solid;
+    border-width: 1px;
+    border-top-color: #323539;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    padding: 10px;
+}
+
+.wd-author-image {
+    border-radius: 36px;
+    object-fit: contain;
+    width: 50px;
+    height: 50px;
+    margin: 0px 11px 0 0;
+}
+
+.wd-embed-image {
+    padding: 2px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.wd-embed-container {
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #323539;
+    border-width: 1px;
+}
+
+.wd-icon-color {
+    color: gray;
+}
+
+.wd-center-image-heading {
+    color: white;
+    bottom: 0;
+    left: 10px;
+}
+
+.wd-search-position {
+    bottom: 18px;
+    left: 28px;
+}
+
+.wd-follow-image {
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+}
+
+.wd-flex-text {
+    display: flex;
+    align-items: center;
+}
+
+.wd-flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wd-heading-black {
+    color: white;
+    font-weight: bold;
+}
+
+.wd-flex-follow {
+    display: flex;
+    align-items: center;
+}
+
+.wd-follow-text {
+    white-space: nowrap;
+}
+
+.wd-flex-follow-btn {
+    margin-left: auto;
+    height: 38px;
+}
+
+.wd-center-text {
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.wd-flex-even {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wd-link-text {
+    font-family: Arial, serif;
+    font-weight: normal;
+}
