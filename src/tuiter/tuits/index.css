@@ -8,14 +8,14 @@
     align-items: center;
 }
 
-.check-color {
+.wd-check-color {
     color: blue;
 }
 
-.liked-heart {
+.wd-liked-heart {
     color: red;
 }
 
-.rounded-cover {
+.wd-rounded-cover {
     object-fit: cover;
 }

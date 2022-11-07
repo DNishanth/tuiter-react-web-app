@@ -5,6 +5,7 @@ import WhoToFollowList from "./who-to-follow-list";
 import ExploreComponent from "./explore";
 import {Routes, Route} from "react-router";
 import HomeComponent from "./home";
+import ProfileComponent from "./profile";
 
 function Tuiter() {
     return(
@@ -19,6 +20,7 @@ function Tuiter() {
                     <Routes>
                         <Route path="/home"    element={<HomeComponent/>}/>
                         <Route path="/explore" element={<ExploreComponent/>}/>
+                        <Route path="/profile" element={<ProfileComponent/>}/>
                     </Routes>
                 </div>
                 <div className="d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">
