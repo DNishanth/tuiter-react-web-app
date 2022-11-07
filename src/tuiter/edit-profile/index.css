@@ -3,7 +3,7 @@
 }
 
 .wd-position-profile {
-    bottom: -52px;
+    bottom: -44px;
     left: 25px;
 }
 
@@ -17,4 +17,8 @@
 
 .wd-info-section {
     margin-top: 70px;
+}
+
+a {
+    color: black;
 }

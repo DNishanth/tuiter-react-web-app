@@ -5,7 +5,6 @@ import {Link} from "react-router-dom";
 
 const ProfileComponent = () => {
     const profile = useSelector(state => state.profile);
-    console.log(profile);
     return(
         <div className="list-group">
             <div className="list-group-item">
@@ -40,7 +39,7 @@ const ProfileComponent = () => {
                         <i className="bi bi-calendar3 col-4 wd-normal-text"> Joined {profile.dateJoined}</i>
                 </div>
                 <div className="text-secondary mt-2">
-                    <span className="wd-bold">1</span> Following <span className="wd-bold ms-3">1</span> Followers
+                    <span className="wd-bold">{profile.followingCount}</span> Following <span className="wd-bold ms-3">{profile.followersCount}</span> Followers
                 </div>
 
 

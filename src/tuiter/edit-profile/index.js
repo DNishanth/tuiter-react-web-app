@@ -1,23 +1,49 @@
 import React, {useState} from "react";
 import "./index.css";
-import {useSelector} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import {Link} from "react-router-dom";
+import {
+    updateFirstName,
+    updateLastName,
+    updateBio,
+    updateLocation,
+    updateDateOfBirth} from "../profile/profile-reducer";
 
 const EditProfileComponent = () => {
     const profile = useSelector(state => state.profile);
+    const dispatch = useDispatch();
+
     const [firstName, setFirstName] = useState(profile.firstName);
     const firstNameChangeHandler = (event) => {
         setFirstName(event.target.value);
-        console.log(firstName);
-        console.log(event.target.value);
     }
+
     const [lastName, setLastName] = useState(profile.lastName);
     const lastNameChangeHandler = (event) => {
         setLastName(event.target.value);
     }
 
-    const saveChanges = () => {
+    const [bio, setBio] = useState(profile.bio);
+    const bioChangeHandler = (event) => {
+        setBio(event.target.value);
+    }
 
+    const [location, setLocation] = useState(profile.location);
+    const locationChangeHandler = (event) => {
+        setLocation(event.target.value);
+    }
+
+    const [dateOfBirth, setDateOfBirth] = useState(profile.dateOfBirth);
+    const dateOfBirthChangeHandler = (event) => {
+        setDateOfBirth(event.target.value);
+    }
+
+    const saveChanges = () => {
+        dispatch(updateFirstName(firstName));
+        dispatch(updateLastName(lastName));
+        dispatch(updateBio(bio));
+        dispatch(updateLocation(location));
+        dispatch(updateDateOfBirth(dateOfBirth));
     }
 
     return(
@@ -25,12 +51,14 @@ const EditProfileComponent = () => {
             <div className="list-group-item">
                 <div className="row">
                     <div className="col-auto ms-3 pt-1">
-                        <i className="fa-solid fa-x"></i>
+                        <Link to="/tuiter/profile">
+                            <i className="fa-solid fa-x"></i>
+                        </Link>
                     </div>
                     <div className="col mb-3">
                         <strong className="wd-heading">Edit Profile</strong>
                         <Link to="/tuiter/profile">
-                            <button type="button" className="btn btn-dark rounded-pill float-end">Save</button>
+                            <button type="button" onClick={saveChanges} className="btn btn-dark rounded-pill float-end">Save</button>
                         </Link>
                     </div>
                 </div>
@@ -48,14 +76,24 @@ const EditProfileComponent = () => {
                     <input type="text" className="form-control" id="lastName" placeholder="Enter last name"
                            onChange={lastNameChangeHandler} value={lastName}></input>
                 </div>
-                {profile.bio}
-                <div className="text-secondary mt-2">
-                    <i className="bi bi-geo-alt col-4 wd-normal-text me-3"> {profile.location}</i>
-                    <i className="bi bi-balloon col-4 wd-normal-text me-3"> Born {profile.dateOfBirth}</i>
-                    <i className="bi bi-calendar3 col-4 wd-normal-text"> Joined {profile.dateJoined}</i>
+                <div className="mb-4">
+                    <label className="mb-1" htmlFor="bio">Bio</label>
+                    <input type="text" className="form-control" id="bio" placeholder="Enter bio"
+                           onChange={bioChangeHandler} value={bio}></input>
                 </div>
-                <div className="text-secondary mt-2">
-                    <span className="wd-bold">1</span> Following <span className="wd-bold ms-3">1</span> Followers
+                <div className="mb-4">
+                    <label className="mb-1" htmlFor="location">Location</label>
+                    <input type="text" className="form-control" id="location" placeholder="Enter location"
+                           onChange={locationChangeHandler} value={location}></input>
+                </div>
+                <div className="mb-4">
+                    <label className="mb-1" htmlFor="dob">Date of Birth</label>
+                    <input type="date" className="form-control" id="dob" placeholder="Enter date of birth"
+                           onChange={dateOfBirthChangeHandler} value={dateOfBirth}></input>
+                </div>
+                <div className="mb-4">
+                    Switch to professional
+                    <i className="bi bi-chevron-compact-right float-end"></i>
                 </div>
             </div>
         </div>
