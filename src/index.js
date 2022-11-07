@@ -7,12 +7,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import whoReducer
     from "./tuiter/reducers/who-reducer";
+import profileReducer
+    from "./tuiter/profile/profile-reducer";
 import tuitsReducer from "./tuiter/tuits/tuits-reducer";
 import { configureStore }
     from '@reduxjs/toolkit';
 import {Provider} from "react-redux";
 const store = configureStore(
-    {reducer: {who: whoReducer, tuits: tuitsReducer}});
+    {reducer: {who: whoReducer, tuits: tuitsReducer, profile: profileReducer}});
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

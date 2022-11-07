@@ -15,16 +15,6 @@
     font-weight: bold;
 }
 
-.btn-light {
-    background-color: white !important;
-    font-weight: bold !important;
-    border-width: 2px !important;
-}
-
 .wd-info-section {
-    margin-top: 80px;
-}
-
-.wd-min-space {
-    line-height: 1.15;
+    margin-top: 70px;
 }
