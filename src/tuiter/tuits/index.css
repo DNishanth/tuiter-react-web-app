@@ -1,0 +1,17 @@
+.wd-heading-black {
+    color: black;
+    font-weight: bold;
+}
+
+.wd-flex-text {
+    display: flex;
+    align-items: center;
+}
+
+.check-color {
+    color: blue;
+}
+
+.liked-heart {
+    color: red;
+}
