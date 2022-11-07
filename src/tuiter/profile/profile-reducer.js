@@ -6,7 +6,7 @@ const profileSlice = createSlice({
         firstName: 'Nishanth', lastName: 'Duraiarasu', handle: '@nish',
         profilePicture: 'react_profile.png', 	bannerPicture: 'space_bg.jpg',
         bio: 'Student, Software Engineer, Space, Science Fiction, and Tech enthusiast. Current student at Northeastern University.',
-        location: 'Boston, MA',	dateOfBirth: '2023-06-12',	dateJoined: 'November 2022',
+        location: 'Boston, MA',	dateOfBirth: '2022-01-01',	dateJoined: 'November 2022',
         followingCount: 1,	followersCount: 9999
     },
     reducers: {
