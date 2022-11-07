@@ -4,7 +4,7 @@ import WhatsHappening from "./whats-happening";
 const HomeComponent = () => {
     return(
         <div>
-            <h1>Home</h1>
+            <h4>Home</h4>
             <WhatsHappening/>
             <TuitsList/>
         </div>

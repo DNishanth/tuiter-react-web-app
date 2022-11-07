@@ -1,4 +1,6 @@
 import React from "react";
+import {useDispatch} from "react-redux";
+import {deleteTuit} from "./tuits-reducer";
 import TuitStats from "./TuitStats";
 
 const TuitItem = (
@@ -19,13 +21,19 @@ const TuitItem = (
         }
     }
 ) => {
+    const dispatch = useDispatch();
+    const deleteTuitHandler = (id) => {
+        dispatch(deleteTuit(id));
+    }
     return(
         <div className="list-group-item">
             <div className="row">
-                <div className="col-1 text-center">
-                    <img width={50} className="rounded-circle" src={`/images/${tuit.image}`}/>
+                <div className="col-auto">
+                    <img width={50} height={50} className="float-end rounded-circle" src={`/images/${tuit.image}`}/>
                 </div>
-                <div className="col-11 ps-4">
+                <div className="col-10">
+                    <i className="bi bi-x-lg float-end"
+                       onClick={() => deleteTuitHandler(tuit._id)}></i>
                     <div className="wd-flex-text">
                         <div className="wd-heading-black">{tuit.userName}&nbsp;</div>
                         <i className="fa fa-check-circle check-color"></i>

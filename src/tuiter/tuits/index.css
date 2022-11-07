@@ -15,3 +15,7 @@
 .liked-heart {
     color: red;
 }
+
+.rounded-cover {
+    object-fit: cover;
+}
