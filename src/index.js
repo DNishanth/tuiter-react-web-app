@@ -10,18 +10,11 @@ import whoReducer
 import profileReducer
     from "./tuiter/profile/profile-reducer";
 import tuitsReducer from "./tuiter/tuits/tuits-reducer";
-import { configureStore }
-    from '@reduxjs/toolkit';
-import {Provider} from "react-redux";
-const store = configureStore(
-    {reducer: {who: whoReducer, tuits: tuitsReducer, profile: profileReducer}});
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-      <Provider store={store}>
           <App />
-      </Provider>
   </React.StrictMode>
 );
 

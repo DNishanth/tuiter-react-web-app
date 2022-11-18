@@ -7,10 +7,21 @@ import {Routes, Route} from "react-router";
 import HomeComponent from "./home";
 import ProfileComponent from "./profile";
 import EditProfileComponent from "./edit-profile";
+import {configureStore} from "@reduxjs/toolkit";
+import whoReducer from "./reducers/who-reducer";
+import tuitsReducer from "./tuits/tuits-reducer";
+import profileReducer from "./profile/profile-reducer";
+import {Provider} from "react-redux";
+
+const store = configureStore({
+    reducer: {
+        who: whoReducer,
+        tuitsData: tuitsReducer,
+        profile: profileReducer}});
 
 function Tuiter() {
     return(
-        <div>
+        <Provider store={store}>
             <Nav/>
             <div className="row mt-2">
                 <div className="col-2 col-md-2 col-lg-1 col-xl-2">
@@ -29,8 +40,7 @@ function Tuiter() {
                     <WhoToFollowList/>
                 </div>
             </div>
-
-        </div>
+        </Provider>
     );
 }
 export default Tuiter
