@@ -7,17 +7,23 @@ const TuitStats = (tuit) => {
     const dispatch = useDispatch();
     return(
         <div className="row">
-            <i className="bi bi-chat col-3"><span
+            <i className="bi bi-chat col-2"><span
                 className="text-secondary ms-3 wd-link-text">{tuit.replies}</span></i>
-            <i className="bi bi-arrow-repeat col-3"><span
+            <i className="bi bi-arrow-repeat col-2"><span
                 className="text-secondary ms-3 wd-link-text">{tuit.retuits}</span></i>
             <i onClick={() => dispatch(updateTuitThunk({
                 ...tuit,
                 likes: tuit.likes + 1,
                 liked: true
-            }))} className={`bi col-3 ${tuit.liked ? 'bi-heart-fill wd-liked-heart' : 'bi-heart'}`}><span
+            }))} className={`bi col-2 ${tuit.liked ? 'bi-heart-fill wd-liked-heart' : 'bi-heart'}`}><span
                 className="text-secondary ms-3 wd-link-text">{tuit.likes}</span></i>
-            <i className="bi bi-share col-3"><span
+            <i onClick={() => dispatch(updateTuitThunk({
+                ...tuit,
+                dislikes: tuit.dislikes + 1,
+                disliked: true
+            }))} className={`bi col-2 ${tuit.disliked ? 'bi-hand-thumbs-down-fill' : 'bi-hand-thumbs-down'}`}><span
+                className="text-secondary ms-3 wd-link-text">{tuit.dislikes}</span></i>
+            <i className="bi bi-share col-2"><span
                 className="text-secondary ms-3 wd-link-text"></span></i>
         </div>
     );
